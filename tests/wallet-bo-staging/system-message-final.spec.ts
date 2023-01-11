@@ -28,7 +28,7 @@ test("admin views system message", async ({ page }) => {
   await page.locator("#rc_select_6").fill("");
   await page.getByText("Mail Title Name").click();
   await page.locator('input[name="mailTitle"]').click();
-  await page.locator('input[name="mailTitle"]').fill("PearlMail2");
+  await page.locator('input[name="mailTitle"]').fill("PearlMail");
   await page.locator('textarea[name="mailContent"]').click();
   await page.locator('textarea[name="mailContent"]').fill("Hi");
   await page.getByRole("button", { name: "Submit" }).click();
